@@ -133,11 +133,11 @@ def main():
     parser.add_argument("--input-dir",
                         action="store",
                         type=str,
-                        help="путь к директории, в которой лежит коллекция документов, по умолчанию stdin")
+                        help="Путь к директории, в которой лежит коллекция документов, по умолчанию stdin")
 
     parser.add_argument("--model",
                         type=str,
-                        help="путь к файлу, в который сохраняется модель")
+                        help="Путь к файлу, в который сохраняется модель")
 
     args = parser.parse_args()
     model = Text(args.input_dir, args.model)
